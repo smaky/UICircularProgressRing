@@ -11,10 +11,6 @@ let package = Package(
         .library(
             name: "UICircularProgressRing",
             targets: ["UICircularProgressRing"]
-        ),
-        .library(
-            name: "UICircularProgressRingLegacy",
-            targets: ["UICircularProgressRingLegacy"]
         )
     ],
     dependencies: [
@@ -26,14 +22,9 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "UICircularProgressRingLegacy",
-            dependencies: [],
-            path: "Legacy"
-        ),
-        .target(
             name: "UICircularProgressRing",
             dependencies: [],
-            path: "Sources"
+            path: "Legacy"
         ),
         .testTarget(
             name: "UICircularProgressRingTests",
