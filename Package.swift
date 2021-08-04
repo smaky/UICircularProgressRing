@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "UICircularProgressRing",
-            targets: ["UICircularProgressRing"]
+            targets: ["UICircularProgressRing", "UICircularProgressRingLegacy"]
         )
     ],
     dependencies: [
