@@ -22,6 +22,11 @@ let package = Package(
     ],
     targets: [
         .target(
+            name: "UICircularProgressRingLegacy",
+            dependencies: [],
+            path: "Legacy"
+        ),
+        .target(
             name: "UICircularProgressRing",
             dependencies: [],
             path: "Sources"
